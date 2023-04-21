@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/GameMenuStyles.uss?fileID=7433441132597879392&amp;guid=43a3be63f5b38a142afbbcd7e550a729&amp;type=3#GameMenuStyles" />
+    <ui:VisualElement name="ResourcesRow" class="craft-recource-row">
+        <ui:VisualElement name="ResourceImage" class="craft-recource-image" />
+        <ui:Label text="9" display-tooltip-when-elided="true" name="ResourcePrice" class="craft-recource-text" />
+    </ui:VisualElement>
+</ui:UXML>

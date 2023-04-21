@@ -1,0 +1,73 @@
+{
+    "name": "GameInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "4bab0520-7957-49a9-8f57-8d970cb5c449",
+            "actions": [
+                {
+                    "name": "ShootBall",
+                    "type": "Button",
+                    "id": "7efd0b24-429d-4835-9c33-d361a716b9bf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "90a94f09-c471-45db-a258-f8a1668bdc0d",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootBall",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b09d3eb-b090-40b2-87fa-0964d8362693",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShootBall",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "9cd999e3-d04a-4cd0-adfd-5735fafefc10",
+            "actions": [
+                {
+                    "name": "OpenCraft",
+                    "type": "Button",
+                    "id": "b7131898-2055-4f67-814f-3fc5f8921a49",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "afe71753-b03d-47f3-8372-039bb9d92e5f",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OpenCraft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

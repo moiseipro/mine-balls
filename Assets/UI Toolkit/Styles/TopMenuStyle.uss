@@ -1,0 +1,153 @@
+.resources-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition-property: translate;
+    transition-duration: 0.3s;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.resources-panel.hidden {
+    display: none;
+    transition-property: translate, display;
+    translate: 0 -200px;
+    transition-duration: 0.3s, 0s;
+    transition-delay: 0s, 0.3s;
+}
+
+.resource-row {
+    min-height: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.resource-image {
+    background-image: url('project://database/Assets/Sprites/Minecraft/block/acacia_log.png?fileID=2800000&guid=aa52d536228232141a0c01467bb6728d&type=3#acacia_log');
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 1;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.resource-count {
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    padding-left: 15px;
+    -unity-font-definition: url('project://database/Assets/Fonts/minecraft%20SDF%201.asset?fileID=11400000&guid=c77ab93ef61251c41a8ed32fb92f6df6&type=2#minecraft SDF 1');
+    -unity-font: url('project://database/Assets/Fonts/minecraft.ttf?fileID=12800000&guid=6fdcb6f3b9969aa4eb5259b197a8a8d7&type=3#minecraft');
+    font-size: 40px;
+    -unity-font-style: bold;
+    white-space: nowrap;
+    -unity-text-outline-width: 0.1px;
+    -unity-text-outline-color: rgba(0, 0, 0, 255);
+    color: rgba(255, 255, 255, 255);
+}
+
+.menu-button {
+    width: 100px;
+    height: 100px;
+    background-image: url('project://database/Assets/Sprites/Minecraft/block/anvil.png?fileID=2800000&guid=3fba5351ead9d4b40829c2c3d56af9f8&type=3#anvil');
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    transition-property: rotate, scale;
+    transition-duration: 0.2s, 0.2s;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.menu-button:hover {
+    rotate: 20deg;
+    transition-property: rotate, scale;
+    transition-duration: 0.3s, 0.2s;
+    scale: 1.1 1.1;
+    transition-timing-function: ease-out-back, ease;
+}
+
+.menu-button.hidden {
+    display: none;
+}
+
+.button-panel {
+    flex-direction: row-reverse;
+    transition-property: translate;
+    transition-duration: 0.3s;
+    padding-right: 120px;
+    padding-top: 0;
+    padding-left: 50px;
+}
+
+.next-level-button {
+    background-image: resource('Blocks/resource_1');
+    width: 200px;
+    height: 200px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    transition-property: border-radius, translate, scale;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.next-level-button:hover {
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-property: border-radius, translate, scale;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    translate: 10px 0;
+    transition-timing-function: ease, ease-out-back, ease-out-back;
+    scale: 1.2 1.2;
+}
+
+.next-level-button.hidden {
+    display: none;
+}
+
+.info-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-image {
+    background-image: url('project://database/Assets/Sprites/Minecraft/gui/level_depth.png?fileID=2800000&guid=e15187713e90ce244815d79d67a91cff&type=3#level_depth');
+    width: 70px;
+    height: 70px;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.info-text {
+    font-size: 50px;
+    -unity-font-definition: url('project://database/Assets/Fonts/minecraft%20SDF%201.asset?fileID=11400000&guid=c77ab93ef61251c41a8ed32fb92f6df6&type=2#minecraft SDF 1');
+    -unity-font: url('project://database/Assets/Fonts/minecraft.ttf?fileID=12800000&guid=6fdcb6f3b9969aa4eb5259b197a8a8d7&type=3#minecraft');
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    padding-right: 20px;
+    padding-left: 20px;
+    -unity-text-outline-width: 2px;
+}

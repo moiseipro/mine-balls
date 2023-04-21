@@ -1,0 +1,274 @@
+.craft-panel {
+    flex-grow: 1;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.82);
+    border-left-color: rgb(255, 159, 0);
+    border-right-color: rgb(255, 159, 0);
+    border-top-color: rgb(255, 159, 0);
+    border-bottom-color: rgb(255, 159, 0);
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-direction: row;
+    transition-timing-function: ease-out-back;
+    transition-property: translate;
+    transition-duration: 0.5s;
+}
+
+.craft-panel.hidden {
+    display: none;
+}
+
+.craft-item {
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: rgb(234, 155, 0);
+    border-right-color: rgb(234, 155, 0);
+    border-top-color: rgb(234, 155, 0);
+    border-bottom-color: rgb(234, 155, 0);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    min-width: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    min-height: 350px;
+    background-color: rgb(106, 98, 82);
+    background-image: resource('Tools/tool_0');
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.craft-recources-panel {
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.craft-recource-row {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+}
+
+.craft-recource-text {
+    flex-grow: 1;
+    font-size: 50px;
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+    -unity-font-style: wrap;
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/Fonts/minecraft.ttf?fileID=12800000&guid=6fdcb6f3b9969aa4eb5259b197a8a8d7&type=3#minecraft');
+    -unity-font-definition: url('project://database/Assets/Fonts/minecraft%20SDF%201.asset?fileID=11400000&guid=c77ab93ef61251c41a8ed32fb92f6df6&type=2#minecraft SDF 1');
+    max-width: 80%;
+    padding-left: 20px;
+    letter-spacing: -5px;
+}
+
+.craft-recource-image {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/Sprites/Minecraft/block/acacia_log.png?fileID=21300000&guid=aa52d536228232141a0c01467bb6728d&type=3#acacia_log');
+    -unity-background-scale-mode: scale-to-fit;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.craft-button {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -unity-font: url('project://database/Assets/Fonts/minecraft.ttf?fileID=12800000&guid=6fdcb6f3b9969aa4eb5259b197a8a8d7&type=3#minecraft');
+    font-size: 35px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-font-style: bold;
+    background-color: rgba(62, 59, 73, 0.71);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: rgb(54, 30, 139);
+    border-right-color: rgb(54, 30, 139);
+    border-top-color: rgb(54, 30, 139);
+    border-bottom-color: rgb(54, 30, 139);
+    -unity-font-definition: url('project://database/Assets/Fonts/minecraft%20SDF%201.asset?fileID=11400000&guid=c77ab93ef61251c41a8ed32fb92f6df6&type=2#minecraft SDF 1');
+    transition-property: background-color, margin, border-radius;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    color: rgb(255, 255, 255);
+    border-top-right-radius: 0;
+    border-top-left-radius: 10px;
+    transition-timing-function: ease, ease-out-back, ease;
+    -unity-text-outline-width: 0.01px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    max-height: 100%;
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+.craft-button:hover {
+    background-color: rgba(66, 58, 95, 0.78);
+    transition-property: background-color, margin, border-radius;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    margin-left: -10px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url('project://database/Assets/Sprites/Minecraft/item/barrier.png?fileID=2800000&guid=c551dd1c6159b9f4b9d685d1ec3e3e9f&type=3#barrier');
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(88, 88, 88, 0);
+    transition-property: rotate, scale;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+
+.close-button:hover {
+    rotate: 10deg;
+    scale: 1.2 1.2;
+    transition-property: rotate, scale;
+    transition-duration: 0.2s, 0.2s;
+}
+
+.buy-button {
+    max-height: 100%;
+    min-height: 100%;
+    -unity-font-definition: url('project://database/Assets/Fonts/minecraft%20SDF%201.asset?fileID=11400000&guid=c77ab93ef61251c41a8ed32fb92f6df6&type=2#minecraft SDF 1');
+    font-size: 35px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 10px;
+    border-left-color: rgb(0, 142, 137);
+    border-right-color: rgb(0, 142, 137);
+    border-top-color: rgb(0, 142, 137);
+    border-bottom-color: rgb(0, 142, 137);
+    background-color: rgba(50, 64, 64, 0.71);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-grow: 1;
+    transition-property: margin, background-color, border-radius;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease-out-back, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+    -unity-text-outline-width: 0.01px;
+    -unity-font-style: bold;
+    -unity-font: url('project://database/Assets/Fonts/minecraft.ttf?fileID=12800000&guid=6fdcb6f3b9969aa4eb5259b197a8a8d7&type=3#minecraft');
+    color: rgba(255, 255, 255, 255);
+    -unity-text-outline-color: rgba(0, 0, 0, 255);
+    flex-basis: 70%;
+}
+
+.buy-button:hover {
+    margin-left: -10px;
+    transition-property: margin, background-color, border-radius;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+    transition-timing-function: ease-out-back, ease, ease;
+    transition-delay: 0s, 0s, 0s;
+    background-color: rgba(47, 84, 82, 0.78);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 10px;
+}
+
+.sell-button {
+    max-height: 100%;
+    min-height: 100%;
+    background-color: rgba(170, 132, 57, 0.71);
+    border-left-color: rgb(234, 155, 0);
+    border-right-color: rgb(234, 155, 0);
+    border-top-color: rgb(234, 155, 0);
+    border-bottom-color: rgb(234, 155, 0);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-grow: 1;
+    background-image: resource('Blocks/resource_10');
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: margin, border-radius;
+    transition-duration: 0.2s, 0.2s;
+    flex-basis: 30%;
+}
+
+.sell-button:hover {
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+    margin-right: -10px;
+    transition-property: border-radius, margin;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-out-back, ease-out-back;
+}
+
+.sell-button.hidden {
+    display: none;
+}

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TopMenuStyle.uss?fileID=7433441132597879392&amp;guid=f4ca744b2236d7a4888bba3b30e43e9b&amp;type=3#TopMenuStyle" />
+    <ui:VisualElement name="ResourceRow" class="resource-row">
+        <ui:VisualElement name="ResourceImage" class="resource-image" />
+        <ui:Label text="99" display-tooltip-when-elided="true" name="ResourceCount" class="resource-count" />
+    </ui:VisualElement>
+</ui:UXML>

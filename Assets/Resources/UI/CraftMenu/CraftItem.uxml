@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/GameMenuStyles.uss?fileID=7433441132597879392&amp;guid=43a3be63f5b38a142afbbcd7e550a729&amp;type=3#GameMenuStyles" />
+    <ui:VisualElement name="CraftItemBlock" class="craft-item">
+        <ui:VisualElement name="Buttons" style="flex-direction: row; max-height: 30%; min-height: 20%;">
+            <ui:Button text="Открыть" name="CraftButton" class="craft-button" />
+            <ui:Button name="SellButton" class="sell-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CraftResources" class="craft-recources-panel" />
+    </ui:VisualElement>
+</ui:UXML>

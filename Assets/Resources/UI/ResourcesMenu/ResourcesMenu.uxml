@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ResourceRow" src="project://database/Assets/Resources/UI/ResourcesMenu/ResourceRow.uxml?fileID=9197481963319205126&amp;guid=04c5e24ee29fef844b1c98927e1da4ea&amp;type=3#ResourceRow" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/TopMenuStyle.uss?fileID=7433441132597879392&amp;guid=f4ca744b2236d7a4888bba3b30e43e9b&amp;type=3#TopMenuStyle" />
+    <ui:VisualElement name="ResourcesMenu" class="resources-panel">
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="ResourceScroll" vertical-scroller-visibility="Hidden" mode="Horizontal" touch-scroll-type="Elastic" style="justify-content: center; flex-direction: row; align-items: stretch; max-width: 100%;">
+            <ui:VisualElement name="ResourcesPanel" style="flex-direction: row; flex-wrap: nowrap; justify-content: center;">
+                <ui:Instance template="ResourceRow" name="ResourceRow" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+    <ui:VisualElement name="MenuButtonPanel" class="button-panel" style="overflow: hidden;">
+        <ui:VisualElement name="ButtonBlock" style="flex-direction: row-reverse; flex-wrap: wrap; flex-grow: 1;">
+            <ui:Button display-tooltip-when-elided="true" name="NextLevelButton" class="next-level-button" style="width: 100px; height: 100px;" />
+            <ui:Button display-tooltip-when-elided="true" name="CraftMenuButton" class="menu-button" style="background-image: url(&apos;project://database/Assets/Sprites/Minecraft/block/crafting_table_front.png?fileID=2800000&amp;guid=bb187f7af474c6e43adb546cd8138882&amp;type=3#crafting_table_front&apos;); display: none;" />
+            <ui:Button display-tooltip-when-elided="true" name="MusicMenuButton" class="menu-button" style="background-image: url(&apos;project://database/Assets/Resources/UI/music_1.png?fileID=21300000&amp;guid=9aa651786b3091d4e928c680e88658d5&amp;type=3#music_1&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="UpgradeMenuButton" class="menu-button" style="background-image: url(&apos;project://database/Assets/Sprites/Minecraft/block/crafting_table_front.png?fileID=21300000&amp;guid=bb187f7af474c6e43adb546cd8138882&amp;type=3#crafting_table_front&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="RestartLevelButton" class="menu-button" style="background-image: url(&apos;project://database/Assets/Sprites/Minecraft/gui/restart-button.png?fileID=21300000&amp;guid=77a585df8be8d514ebc5a750a7bba27d&amp;type=3#restart-button&apos;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="InfoBlock" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap;">
+            <ui:VisualElement name="InfoRow" class="info-row">
+                <ui:Label text="31" display-tooltip-when-elided="true" name="InfoMaxDepthText" class="info-text" style="padding-right: 0; -unity-text-align: upper-right; font-size: 55px; color: rgb(255, 235, 146); -unity-text-outline-color: rgb(0, 0, 0);" />
+                <ui:VisualElement name="InfoImage" class="info-image" />
+                <ui:Label text="31" display-tooltip-when-elided="true" name="InfoDepthText" class="info-text" style="padding-left: 5px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="InfoRow" class="info-row">
+                <ui:VisualElement name="InfoImage" class="info-image" style="background-image: url(&apos;project://database/Assets/Sprites/Minecraft/gui/tool_count.png?fileID=2800000&amp;guid=761e40a0f1cf302419289141b7e8f833&amp;type=3#tool_count&apos;);" />
+                <ui:Label text="31" display-tooltip-when-elided="true" name="InfoToolText" class="info-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
